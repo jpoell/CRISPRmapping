@@ -33,7 +33,7 @@ bash ~/scripts/CRISPRmapping/CRISPRmapping.bash ~/scripts/CRISPRmapping/TKOv3.ts
 # You can visually inspect what would work as motif
 zgrep ^[ACGTN] fastq/sample1_R1.fastq.gz | head -n 20
 # The motif can be written as regular expression: I have needed this for a library!
-bash ~/scripts/CRISPRmapping/CRISPRmapping2.bash ~/scripts/CRISPRmapping/TKOv3.tsv "GAAA[CT]ACCG"
+bash ~/scripts/CRISPRmapping/CRISPRmapping.bash ~/scripts/CRISPRmapping/TKOv3.tsv "GAAA[CT]ACCG"
 # To get the sequencing stats, you also need the file with total reads per file.
 # This is usually provided by the sequencing service. This particular R-script works for a specific format of multiQC,
 # but it should be easy to adapt it to a different format. The R-script requires library optparse to run. 
